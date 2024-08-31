@@ -28,11 +28,11 @@
 }
 
 .promoteButton {
-    background-color: #008080;
-    min-width: 70%;
+    background-color: #008080 !important;
+    min-width: 70% !important;
 }
 
 .revokeButton {
-    background-color: crimson;
-    min-width: 70%;
+    background-color: crimson !important;
+    min-width: 70% !important;
 }

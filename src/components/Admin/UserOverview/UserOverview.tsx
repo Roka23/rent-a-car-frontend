@@ -93,7 +93,6 @@ const UserOverview: React.FC = () => {
                                 <TableCell>
                                     <Button
                                         variant="contained"
-                                        color="primary"
                                         onClick={user.role === 'admin' ? () => handleRevokeAdmin(user._id) : () => handlePromoteToAdmin(user._id)}
                                         className={user.role === 'admin' ? styles.revokeButton : styles.promoteButton}
                                     >
