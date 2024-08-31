@@ -1,0 +1,61 @@
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Adjust spacing between form fields */
+    width: 100%;
+}
+
+.formGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* Spacing between grouped fields */
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input {
+    padding: 10px 0;
+    padding-inline-start: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.inputGroup {
+    flex: 1 1 45%;
+    /* Allows two fields to be side by side while wrapping on small screens */
+    min-width: 200px;
+}
+
+.inputGroup input,
+.inputGroup textarea,
+.inputGroup select {
+    width: 100%;
+}
+
+
+/* Ensure full-width on small screens */
+@media (max-width: 600px) {
+    .formRow .inputGroup {
+        flex: 1 1 100%;
+        /* Full width for each group on small screens */
+    }
+}
+
+.submitButton {
+    background-color: #008080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}

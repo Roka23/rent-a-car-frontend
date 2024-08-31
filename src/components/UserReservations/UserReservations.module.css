@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.reservationsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.reservationItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carImage {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.detailsContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 48px;
+}
+.carDetails, .userDetails {
+    margin-top: 10px;
+}
+
+.carDetails ul, .userDetails ul {
+    list-style: none;
+    padding: 0;
+}
+
+.carDetails li, .userDetails li {
+    margin-bottom: 5px;
+}
+
+.pending { color: orange; }
+.confirmed { color: green; }
+.cancelled { color: red; }
+.completed { color: blue; }

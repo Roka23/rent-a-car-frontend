@@ -1,0 +1,88 @@
+.carsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 90%;
+}
+
+.searchFilter {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.filterContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.dropdown {
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 10%;
+    border: 0;
+    border: 2px solid black;
+}
+
+.numberInput {
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 6%;
+}
+
+.searchInput {
+    padding: 10px 20px;
+    width: 50%;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.carsGrid {
+    margin-top: 7.5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .searchInput {
+        width: 80%;
+    }
+
+    .filterContainer {
+        flex-direction: column;
+    }
+
+    .dropdown {
+        width: 80%;
+    }
+
+    .numberInput {
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .carsGrid {
+        grid-template-columns: 1fr;
+        /* Single column layout */
+    }
+}
+
+/* Tablets (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .carsGrid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+/* Large screens (above 900px) */
+@media (min-width: 901px) {
+    .carsGrid {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+}

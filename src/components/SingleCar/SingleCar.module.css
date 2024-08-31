@@ -1,0 +1,211 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.imageContainer {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.carImage {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.detailsContainer {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #6c757d;
+}
+
+.infoRow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    margin-right: 8px;
+    color: #008080;
+}
+
+.infoText {
+    font-size: 1em;
+    color: #495057;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.reserveButton {
+    background-color: #008080;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.reserveButton:hover {
+    opacity: 0.5;
+}
+
+.reserveButton:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+.status {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.available {
+    background-color: greenyellow;
+}
+
+.rented {
+    background-color: crimson;
+}
+
+.maintenance {
+    background-color: chocolate;
+}
+
+/* Profile.module.css */
+.reviewsContainer {
+    padding: 20px;
+    margin-top: 30px;
+    width: 60%;
+    /* margin: auto; */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reviewsList {
+    margin-bottom: 30px;
+}
+
+.review {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.reviewHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.reviewUsername {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.reviewRating {
+    color: #f0c040;
+    font-size: 1.2rem;
+}
+
+.reviewComment {
+    margin-top: 10px;
+    color: #555;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.reviewForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.starPicker {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.activeStar {
+    color: #f0c040;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.inactiveStar {
+    color: #ccc;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.reviewTextarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+}
+
+.submitButton {
+    align-self: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+}

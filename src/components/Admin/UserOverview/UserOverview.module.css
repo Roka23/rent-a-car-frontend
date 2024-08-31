@@ -1,0 +1,38 @@
+.userOverview {
+    padding: 20px;
+    width: 100%;
+}
+
+.title {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tableContainer {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.MuiTableCell-head {
+    font-weight: bold;
+    background-color: #f5f5f5;
+}
+
+.MuiTableCell-root {
+    padding: 16px;
+}
+
+.MuiTableRow-root:hover {
+    background-color: #f1f1f1;
+}
+
+.promoteButton {
+    background-color: #008080;
+    min-width: 70%;
+}
+
+.revokeButton {
+    background-color: crimson;
+    min-width: 70%;
+}

@@ -1,0 +1,151 @@
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.userIcon {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.profileDetails {
+    width: 100%;
+    text-align: left;
+}
+
+.profileDetails p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.editButton,
+.saveButton {
+    background-color: #008080;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.editButton:hover,
+.saveButton:hover {
+    background-color: #008080;
+}
+
+.profileForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.profileForm label {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.profileForm input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+/* Profile.module.css */
+.profileContainer {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.userIcon {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.profileDetails {
+    margin-bottom: 20px;
+}
+
+.editButton, .saveButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.editButton:hover, .saveButton:hover {
+    background-color: #0056b3;
+}
+
+.profileForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.profileForm input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.reviewsContainer {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.reviewsList {
+    margin-top: 10px;
+}
+
+.review {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.reviewHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.carImage {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.carLink {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.carLink:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,92 @@
+.landingContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: #333;
+    height: 90.91vh;
+}
+
+.headingWrapper {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 40%;
+    padding: 10%;
+    color: white;
+    z-index: 3;
+}
+
+.logoContainer{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.imageLogo{
+    width: 50%;
+}
+
+.mainButton {
+    background-color: #008080;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    width: 150px;
+    padding: 15px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+.mainButton:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.triangleSeparator {
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 40vh solid transparent;
+    /* Adjust height */
+    border-bottom: 50vh solid transparent;
+    /* Adjust height */
+    border-right: 50vh solid crimson;
+    z-index: 1;
+    /* Adjust width and color */
+}
+
+
+.carImage {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+    .landingContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .headingWrapper {
+        width: 80%;
+    }
+
+    .carImage {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .carImage {
+        width: 100%;
+    }
+}

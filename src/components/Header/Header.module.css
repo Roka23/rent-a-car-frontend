@@ -1,0 +1,137 @@
+.header {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 32px;
+}
+
+.navItem {
+    font-size: 1.1rem;
+    margin-right: 20px;
+    z-index: 4 !important;
+    text-align: center;
+}
+
+.navItem a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    z-index: 4 !important;
+}
+
+.navItem a:hover {
+    color: crimson;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.mainButton {
+    background-color: #008080;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    width: 150px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    z-index: 100;
+}
+
+.mainButton:hover {
+    cursor: pointer;
+    color: white !important;
+    opacity: 0.5;
+}
+
+.profileMenu {
+    position: relative;
+    display: inline-block;
+    z-index: 1000;
+}
+
+.profileIcon {
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.dropdownMenu {
+    position: absolute;
+    right: 0;
+    background-color: #333;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.menuItem {
+    color: #fff;
+    background: none;
+    border: 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.menuItem:hover {
+    background-color: #575757;
+    color: crimson;
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .navList {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        padding: 10px;
+        width: 150px;
+        border-radius: 8px;
+        z-index: 100;
+    }
+
+    .navList.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

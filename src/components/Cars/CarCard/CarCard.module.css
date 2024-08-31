@@ -1,0 +1,136 @@
+.carCard {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* height: auto; */
+    /* height: 400px; */
+}
+
+.carImage {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.status {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.available {
+    background-color: greenyellow;
+}
+
+.rented {
+    background-color: crimson;
+}
+
+.maintenance {
+    background-color: chocolate;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.carCard h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.carCard p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.reserveButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    padding: 20px 30px;
+    background-color: #008080;
+    border-radius: 20px;
+    color: #FFF;
+    width: 40%;
+    text-align: center;
+}
+
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.deleteButton {
+    border: 0;
+    padding: 20px 30px;
+    background-color: crimson;
+    border-radius: 20px;
+    color: #FFF;
+    width: 40%;
+    text-align: center;
+}
+
+.reserveButton:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.adminButtonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.adminButton {
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.editButton {
+    background-color: darkblue;
+}
+
+.deleteButton2 {
+    border: 0;
+    padding: 20px 30px;
+    background-color: crimson;
+    border-radius: 20px;
+    color: #FFF;
+    width: 20%;
+    text-align: center;
+}
+
+.deleteButton:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.deleteButton2:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.adminButton:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
